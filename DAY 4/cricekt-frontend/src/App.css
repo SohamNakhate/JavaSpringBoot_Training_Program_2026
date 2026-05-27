@@ -1,0 +1,22 @@
+.App{
+
+width:70%;
+margin:auto;
+text-align:center;
+
+}
+
+input{
+
+padding:8px;
+width:300px;
+
+}
+
+button{
+
+padding:8px 15px;
+cursor:pointer;
+margin:5px;
+
+}

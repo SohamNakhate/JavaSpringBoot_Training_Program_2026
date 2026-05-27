@@ -1,0 +1,25 @@
+# Eclipse workspace
+.metadata/
+
+# Java
+target/
+*.class
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Node
+node_modules/
+
+# OS
+Thumbs.db
+.DS_Store
