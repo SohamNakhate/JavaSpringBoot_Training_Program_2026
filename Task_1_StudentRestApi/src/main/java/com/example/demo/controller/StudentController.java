@@ -13,28 +13,28 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/api/v1")
 public class StudentController {
-	
+
 	@Autowired
-	public StudentService studentService; 
-	
+	public StudentService studentService;
+
 	@PostMapping("/add")
-	public StudentEntity addStudent( @Valid @RequestBody StudentEntity student) {
-		return studentService.addStudent(student); 
+	public StudentEntity addStudent(@Valid @RequestBody StudentEntity student) {
+		return studentService.addStudent(student);
 	}
-	
+
 	@GetMapping("/getStudents")
-	public List<StudentEntity> getAllStudents(){
-		return studentService.getAllStudent(); 
+	public List<StudentEntity> getAllStudents() {
+		return studentService.getAllStudent();
 	}
-	
+
 	@GetMapping("/getStudents/{id}")
-	public Optional<StudentEntity> getStudentById(Long id) {
+	public Optional<StudentEntity> getStudentById(@PathVariable Long id) {
 		return studentService.getStudentById(id);
 	}
-	
+
 	@DeleteMapping("/delete/{id}")
-	public String deleteStudentById(Long id) {
+	public String deleteStudentById(@PathVariable Long id) {
 		return studentService.deleteStudentById(id);
 	}
-	
+
 }
